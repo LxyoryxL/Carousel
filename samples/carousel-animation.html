@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,43 +14,51 @@
       justify-content: center;
       margin: 30px;
     }
+
     .carousel {
       margin: 0 auto;
     }
   </style>
 </head>
+
 <body>
+  <!-- 动画效果选择 -->
   <div class="select">
     选择效果
     <select>
       <option value="fade">fade</option>
+      <option value="slide">slide</option>
       <option value="cssSlide">cssSlide</option>
       <option value="cssZoom">cssZoom</option>
     </select>
   </div>
+  <!-- 轮播图组件 -->
   <div class="carousel">
+    <!-- 图片面板 -->
     <div class="panels">
       <a href="#"><img src="http://cdn.jirengu.com/book.jirengu.com/img/1.jpg"></a>
       <a href="#"><img src="http://cdn.jirengu.com/book.jirengu.com/img/2.jpg"></a>
       <a href="#"><img src="http://cdn.jirengu.com/book.jirengu.com/img/3.jpg"></a>
       <a href="#"><img src="http://cdn.jirengu.com/book.jirengu.com/img/4.jpg"></a>
     </div>
-
+    <!-- 导航切换 -->
     <div class="action">
+      <!-- 上下页切换 -->
       <span class="pre">上一个</span>
       <span class="next">下一个</span>
+      <!-- 小圆点切换 -->
       <div class="dots">
-          <span class="active"></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </div>
 
 
-  
 
   <script src="../lib/carousel-animation.js"></script>
 </body>
+
 </html>
